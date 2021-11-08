@@ -7,5 +7,5 @@ class Vacancy < ApplicationRecord
   validates :requirements, presence: true
   validates :description, presence: true, length: {minimum: 3, maximum: 1000}
   validates :salary, presence: true
-  validates :available, presence: true
+  
 end
