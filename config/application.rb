@@ -9,7 +9,12 @@ Bundler.require(*Rails.groups)
 module Onebitjobs
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
+    config.to_prepare do 
+      Devise::RegistrationsController.layout "application"
+    end
+    
     config.load_defaults 6.1
+
 
     # Configuration for the application, engines, and railties goes here.
     #
