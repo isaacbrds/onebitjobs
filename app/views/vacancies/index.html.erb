@@ -17,6 +17,7 @@
           <td class="align-middle"><%= vacancy.title %></td>
           <td class="align-middle"><%= vacancy.created_at.strftime('%d/%m/%Y') %></td>
           <td class="align-middle"><%= vacancy.applicants.count %></td>
+          
           <td class="align-middle">
             <%= link_to edit_vacancy_path(vacancy), class: "text-secondary text-decoration-none", style: 'margin-right: 5px' do %>
               <i class="far fa-edit"></i>Editar
